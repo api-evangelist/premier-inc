@@ -28,6 +28,10 @@ apis:
     description: >-
       The Premier Inc API provides access to platform services and data for enterprise integration and automation.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/PremierInc
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/premierinc
   - type: Website
     url: https://www.premierinc.com
 maintainers:
