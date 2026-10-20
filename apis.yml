@@ -27,46 +27,73 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/premier-inc.png
 tags:
+- Healthcare
+- Group Purchasing
+- Analytics
+- Supply Chain
+- Value-Based Care
+description: 'Premier Inc (NASDAQ: PINC) is a US healthcare improvement company that operates one of the largest group purchasing organizations and the PINC AI technology and services platform for clinical intelligence, margin improvement and value-based care, built on cost, quality and operational data from US hospital discharges. It publishes no public developer program.'
+created: '2026-04-19'
+modified: '2026-10-20'
+specificationVersion: '0.23'
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+common:
+- type: Hosts
+  url: hosts/premier-inc-hosts.yml
+- type: Vendors
+  url: vendors/premier-inc-vendors.yml
+- type: Leadership
+  url: https://premierinc.com/leadership
+- type: Plans
+  url: plans/premier-inc-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/premier-inc-rate-limits.yml
+- type: FinOps
+  url: finops/premier-inc-finops.yml
+- type: DomainSecurity
+  url: security/premier-inc-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/PremierInc
+- type: LinkedIn
+  url: https://www.linkedin.com/company/premierinc
+- type: Website
+  url: https://premierinc.com
+- url: https://premierinc.com/feed.xml
+  type: Blog
+- type: PrivacyPolicy
+  url: https://premierinc.com/privacy-notice
+- type: TermsOfService
+  url: https://premierinc.com/terms-conditions
+- type: Newsroom
+  url: https://premierinc.com/newsroom
+apis:
+- aid: premier-inc:premier-inc-api
+  name: Premier Inc API
+  tags:
   - Healthcare
   - Group Purchasing
   - Analytics
-description: >-
-  Premier Inc is a major US corporation and Fortune 1000 company. The Premier Inc API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
-created: '2026-04-19'
-modified: '2026-04-19'
-specificationVersion: '0.23'
-apis:
-  - aid: premier-inc:premier-inc-api
-    name: Premier Inc API
-    tags:
-      - Healthcare
-      - Group Purchasing
-      - Analytics
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://api.premierinc.com
-    humanURL: https://developer.premierinc.com
-    properties:
-      - url: https://developer.premierinc.com/docs
-        type: Documentation
-    description: >-
-      The Premier Inc API provides access to platform services and data for enterprise integration and automation.
-common:
-  - type: Plans
-    url: plans/premier-inc-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/premier-inc-rate-limits.yml
-  - type: FinOps
-    url: finops/premier-inc-finops.yml
-  - type: DomainSecurity
-    url: security/premier-inc-domain-security.yml
-  - type: GitHubOrganization
-    url: https://github.com/PremierInc
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/premierinc
-  - type: Website
-    url: https://www.premierinc.com
-  - url: https://www.premierinc.com/feed.xml
-    type: Blog
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://api.premierinc.com
+  humanURL: https://premierinc.com
+  properties: []
+  description: Premier Inc runs an API gateway host at api.premierinc.com that answers 503 to anonymous requests; no public developer portal, documentation or contract is published (developer.premierinc.com does not resolve). Integration with PINC AI products is arranged with members and partners directly.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: premierinc.com links no developer or API pages, developer.premierinc.com does not resolve, the PremierInc GitHub org has no public repos, and api.premierinc.com answers 503 to every anonymous path.
+  evidence:
+  - url: https://api.premierinc.com/openapi.json
+    status: 503
+  - url: https://premierinc.com/
+    status: 200
+  - url: https://github.com/PremierInc
+    status: 200
+  checked: '2026-10-20'
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v5
